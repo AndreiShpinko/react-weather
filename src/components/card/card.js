@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "./card.scss";
+import "./Card.scss";
 
 export default class Card extends Component {
   render() {
@@ -31,5 +31,3 @@ export default class Card extends Component {
     );
   }
 }
-
-// https://www.google.com.ua/maps/search/qwer/

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import GotWeather from "../../services/gotWeather";
-import Spinner from "../spinner";
+import Spinner from "../Spinner/Spinner";
 
-import "./search.scss";
+import "./Search.scss";
 
 export default class Search extends Component {
   state = {
@@ -23,7 +23,6 @@ export default class Search extends Component {
     this.weather
       .getWeatherOfCity(input.value)
       .then((data) => {
-        console.log(data);
         this.setState({ error: false });
         const { main, name, sys, weather, coord: {lat, lon}  } = data;
 
